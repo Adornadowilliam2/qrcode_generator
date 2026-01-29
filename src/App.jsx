@@ -93,7 +93,7 @@ const App = () => {
         {!hasQr ? (
           <button
             onClick={checkAndGenerateQRCode}
-            className="p-10px mt-20px block m-auto"
+            className="btn-design p-10px mt-20px block m-auto"
           >
             Create QR
           </button>
@@ -101,7 +101,7 @@ const App = () => {
           <>
             <div className="flex gap">
               <button
-                className="p-10px mt-20px block m-auto"
+                className="btn-design p-10px mt-20px block m-auto"
                 onClick={() => {
                   setHasQr(false);
                   setData("");
@@ -113,7 +113,7 @@ const App = () => {
               <button
                 onClick={downloadQRCode}
                 disabled={!data ? !data : !isValidURL(data)}
-                className="p-10px mt-20px block m-auto"
+                className="btn-design p-10px mt-20px block m-auto"
               >
                 Download QR Code
               </button>

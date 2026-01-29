@@ -36,7 +36,7 @@ h1{
 }
 
 .bg-black{
-  background-color: #000;
+  background-color: #050e17;
 }
 
 .text-white{
@@ -69,4 +69,12 @@ h1{
 .gap{
 
   gap: 10px;
+}
+
+.btn-design{
+    text-shadow: rgb(37, 223, 198) 2px 4px 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #050e17;
+    border: 2px solid rgb(37, 223, 198);
 }
