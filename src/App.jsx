@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import EasyQRCode from "easyqrcodejs";
 import { toast, ToastContainer } from "react-toastify";
-import { DialogTitle, Dialog, DialogContent } from "@mui/material";
+
 
 const App = () => {
   const [data, setData] = useState("");
   const qrCodeRef = useRef(null);
 
-  const handleInputChange = (event) => {
-    setData(event.target.value);
+  const handleInputChange = (e) => {
+    setData(e.target.value);
   };
 
   const downloadQRCode = () => {
